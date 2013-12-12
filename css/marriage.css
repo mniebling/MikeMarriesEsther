@@ -1,0 +1,185 @@
+/* ! Structural & resets */
+body {
+	font-family: "Lato", sans-serif;
+
+	/* Offset content by top nav line-height + 2x padding */
+	margin: 34px 0 0 0;
+}
+
+ul, 
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0;
+}
+
+
+/* ! Sections (structural) */
+section {
+	padding: 25px 0 75px 0;
+	text-align: center;
+	color: #fff;
+}
+
+section h2 {
+	margin: 0 0 25px 0;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	/* Adjust position so jump-to-anchor looks good with fixed header */
+	padding-top: 35px;
+}
+
+section h2::before {
+	content: "{ ";
+	font-weight: 300;
+}
+
+section h2::after {
+	content: " }";
+	font-weight: 300;
+}
+
+section p {
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+}
+
+
+/* ! Section colors */
+.section-main        { background-color: #578e37; }
+.section-when        { background-color: #477a7f; }
+.section-when h2     {            color: #2b4e52; }
+.section-where       { background-color: #9e8f3e; }
+.section-where h2    {            color: #5a5217; }
+.section-registry    { background-color: #895d96; }
+.section-registry h2 {            color: #53395e; }
+.section-timeline    { background-color: #999999; }
+.section-timeline h2 {            color: #666666; }
+
+
+/* ! Individual sections */
+.section-main-header {
+	width: 235px;
+	margin: 50px auto 100px auto;
+	border-top: 2px solid #6dd900;
+	border-bottom: 1px solid #46b408;
+}
+
+.section-main h1 {
+	font-weight: 300;
+	font-size: 40px;
+	letter-spacing: -0.04em;
+	margin: 0;
+}
+
+.section-main-subtitle {
+	color: #70d900;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 3.65px;
+	text-transform: uppercase;
+	margin: 0 0 4px 7px;
+}
+
+.section-when-header {
+	width: 375px;
+	padding: 5px 0;
+	margin: 0 auto;
+	border-top: 2px solid #60b7c1;
+	border-bottom: 1px solid #57a3ac;
+}
+
+.add-to-calendar {
+	font-size: 14px;
+	color: #60b7c1;
+	margin: 25px 0 0 0;
+}
+
+.add-to-calendar a {
+	padding: 0 0 0 10px;
+	color: #60b7c1;
+}
+
+iframe {
+	display: inline-block;
+	margin: 0 50px 0 -100px;
+}
+
+.section-where-wrapper {
+	vertical-align: top;
+	text-align: left;
+	display: inline-block;
+}
+
+.section-where-header {
+	padding: 5px 0;
+	border-top: 2px solid #c7b42c;
+	border-bottom: 1px solid #b5a40b;
+}
+
+p.address {
+	font-size: 24px;
+	margin: 25px 0 0 0;
+}
+
+.check-out-photos {
+	margin: 25px 0 0 0;
+}
+
+.section-where a, 
+.check-out-photos,
+.check-out-photos a {
+	font-size: 14px;
+	color: #d3bf07;
+}
+
+.check-out-photos a {
+	padding: 0 0 0 10px;
+}
+
+
+/* ! Navigation */
+div.nav {
+	background-color: rgba(0, 0, 0, 0.8);
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 300;
+	text-align: center;
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 10px 0;
+}
+
+.nav-label {
+	color: #aaa;
+}
+
+.nav-list, 
+.nav-list li {
+	display: inline;
+}
+
+.nav-list li {
+	margin: 0 10px;
+}
+
+.nav-list li a {
+	color: #fff;
+}
