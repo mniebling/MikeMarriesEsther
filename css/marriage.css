@@ -3,7 +3,7 @@ body {
 	font-family: "Lato", sans-serif;
 
 	/* Offset content by top nav line-height + 2x padding */
-	margin: 34px 0 0 0;
+	margin: 0 0 0 0;  /* 34px 0 0 0 */
 }
 
 ul, 
@@ -25,36 +25,41 @@ p {
 	margin: 0;
 }
 
+.no-transition {
+	/* use to temporarily override css transitions */
+	transition: none !important;
+}
+
 
 /* ! Sections (structural) */
 section {
-	padding: 25px 0 75px 0;
+	padding: 1.7em 0 4em 0;
 	text-align: center;
 	color: #fff;
 }
 
-section h2 {
-	margin: 0 0 25px 0;
-	font-size: 20px;
+h2.section-header {
+	margin: 0 0 1.5em 0;
+	font-size: 1.25em;
 	font-weight: 700;
 	text-transform: uppercase;
 
 	/* Adjust position so jump-to-anchor looks good with fixed header */
-	padding-top: 35px;
+	padding-top: 2em;
 }
 
-section h2::before {
+h2.section-header::before {
 	content: "{ ";
 	font-weight: 300;
 }
 
-section h2::after {
+h2.section-header::after {
 	content: " }";
 	font-weight: 300;
 }
 
 section p {
-	font-size: 40px;
+	font-size: 2.5em;
 	font-weight: 300;
 	letter-spacing: -0.04em;
 }
@@ -68,56 +73,74 @@ section p {
 .section-where h2    {            color: #5a5217; }
 .section-registry    { background-color: #895d96; }
 .section-registry h2 {            color: #53395e; }
-.section-timeline    { background-color: #999999; }
-.section-timeline h2 {            color: #666666; }
+.section-timeline    { background-color: #bbbbbb; }
+.section-timeline h2 {            color: #777777; }
 
 
 /* ! Individual sections */
+.section-main {
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: 60% bottom;
+
+	/* Image real size is 750px tall for retina */
+	background-size: auto 375px;
+}
+
+/* a wrapper to position offset from center */
+.section-main-header-wrap {
+	width: 1px;
+	margin: 9em auto 4em auto;
+	overflow: visible;
+}
+
 .section-main-header {
-	width: 235px;
-	margin: 50px auto 100px auto;
+	width: 14.75em;
+	margin-left: -20em;
 	border-top: 2px solid #6dd900;
 	border-bottom: 1px solid #46b408;
 }
 
 .section-main h1 {
 	font-weight: 300;
-	font-size: 40px;
+	font-size: 2.5em;
 	letter-spacing: -0.04em;
 	margin: 0;
 }
 
 .section-main-subtitle {
 	color: #70d900;
-	font-size: 14px;
+	font-size: 0.9em;
 	font-weight: 300;
-	letter-spacing: 3.65px;
+	letter-spacing: 0.25em;
 	text-transform: uppercase;
-	margin: 0 0 4px 7px;
+
+	/* right margin adjusts for the optical illusion */
+	margin: 0 0 0.2em 0.4em;
 }
 
 .section-when-header {
-	width: 400px;
-	padding: 5px 0;
+	width: 10em;
+	padding: 0.1em 0;
 	margin: 0 auto;
 	border-top: 2px solid #60b7c1;
 	border-bottom: 1px solid #57a3ac;
 }
 
 .add-to-calendar {
-	font-size: 14px;
+	font-size: 0.9em;
 	color: #60b7c1;
-	margin: 25px 0 0 0;
+	margin: 2em 0 0 0;
 }
 
 .add-to-calendar a {
-	padding: 0 0 0 10px;
+	padding: 0 0 0 0.8em;
 	color: #60b7c1;
 }
 
 iframe {
 	display: inline-block;
-	margin: 0 50px 0 -100px;
+	margin: 0 4em 0 -6em;
 }
 
 .section-where-wrapper {
@@ -133,38 +156,65 @@ iframe {
 }
 
 p.address {
-	font-size: 24px;
-	margin: 25px 0 0 0;
+	font-size: 1.5em;
+	margin: 1.2em 0 0 0;
 }
 
 .check-out-photos {
-	margin: 25px 0 0 0;
+	margin: 1.2em 0 0 0;
 }
 
 .section-where a, 
 .check-out-photos,
 .check-out-photos a {
-	font-size: 14px;
+	font-size: 0.9em;
 	color: #d3bf07;
 }
 
 .check-out-photos a {
-	padding: 0 0 0 10px;
+	padding: 0 0 0 0.8em;
+}
+
+.section-registry-header {
+	width: 50em;
+	margin: 0 auto;
+	padding: 15px 20px;
+	border-top: 2px solid #deb0f2;
+	border-bottom: 1px solid #b386c6;
+}
+
+.section-registry p {
+	font-size: 1.5em;
+	letter-spacing: 0;
+	margin: 0 0 2em 0;
+}
+
+.section-registry-header img {
+	margin: 0 1.75em;
+	transition: opacity 0.5s;
+
+	/* Image real size is 82px tall for retina */
+	height: 41px;
+}
+
+.section-registry-header img:hover {
+	opacity: 0.6;
 }
 
 
 /* ! Navigation */
 div.nav {
 	background-color: rgba(0, 0, 0, 0.8);
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 0.9em;
+	line-height: 0.9em;
 	font-weight: 300;
 	text-align: center;
 
 	position: fixed;
+	z-index: 101;
 	width: 100%;
 	top: 0;
-	padding: 10px 0;
+	padding: 0.7em 0;
 }
 
 .nav-label {
@@ -177,9 +227,13 @@ div.nav {
 }
 
 .nav-list li {
-	margin: 0 10px;
+	margin: 0 0.75em;
 }
 
 .nav-list li a {
 	color: #fff;
+}
+
+.nav-list li a {
+	transition: color 0.5s;
 }

@@ -5,41 +5,33 @@
 	<title>Mike Marries Esther!</title>
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans">
 	<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/marriage.css">
 </head>
 
 
-<body>
-
-	<div class="nav">
-		<span class="nav-label">Esther &amp; Mike get married:</span>
-		<ul class="nav-list">
-			<li><a href="#when">When</a></li>
-			<li><a href="#where">Where</a></li>
-			<li><a href="#registry">Registry</a></li>
-			<li><a href="#timeline">A Tale of Love</a></li>
-		</ul>
-	</div>
+<body data-spy="scroll">
 
 	<section class="section-main">
-		<div class="section-main-header">
-			<h1 class="section-main-title">Esther &amp; Mike</h1>
-			<div class="section-main-subtitle">Are getting married</div>
+		<div class="section-main-header-wrap">
+			<div class="section-main-header">
+				<h1 class="section-main-title">Esther &amp; Mike</h1>
+				<div class="section-main-subtitle">Are getting married</div>
+			</div>
 		</div>
 	</section>
 
 	<section class="section-when">
-		<h2 id="when">When</h2>
+		<h2 class="section-header" id="when">When</h2>
 		<p class="section-when-header">Saturday, July 12th, 2014</p>
 		<div class="add-to-calendar">
-			<i class="fa fa-calendar"></i><a href="">Add to Google Calendar</a>
-			<!-- Disabled until we know the actual time: http://goo.gl/ITWJZX -->
+			<i class="fa fa-calendar"></i><a href="http://goo.gl/HMeEes">Add to Google Calendar</a>
 		</div>
 	</section>
 
 	<section class="section-where">
-		<h2 id="where">Where</h2>
+		<h2 class="section-header" id="where">Where</h2>
 		<iframe src="https://mapsengine.google.com/map/embed?mid=zs2cl7cEy8sg.knuu0P38jrCc" width="400" height="300"></iframe>
 
 		<div class="section-where-wrapper">
@@ -59,19 +51,57 @@
 	</section>
 
 	<section class="section-registry">
-		<h2 id="registry">Registry</h2>
-		<p>
-			Coming soon!
-		</p>
+		<h2 class="section-header" id="registry">Registry</h2>
+		<div class="section-registry-header">
+			<p>
+				Celebrating with us is the best gift you can give!<br /><br />
+				But, if you want to give a tangible present too, we did register at a few different retailers. Click the logos to see details:
+			</p>
+			<a href="http://www.amazon.com/registry/wedding/1GAQAFUJHYJQS">
+				<img src="img/logo-amazon.png" />
+			</a>
+			<a href="">
+				<img src="img/logo-containerstore.png" />
+			</a>
+			<a href="">
+				<img src="img/logo-crateandbarrel.png" />
+			</a>
+		</div>
 	</section>
 
 	<section class="section-timeline">
-		<h2 id="timeline">Esther &amp; Mike's romance timeline</h2>
-		<p>
-			Coming soon!
-		</p>
+		<h2 class="section-header" id="timeline">Esther &amp; Mike's romance timeline</h2>
+		<div id="timeline-embed"></div>
+    <script type="text/javascript">
+        var timeline_config = {
+            width:    '100%',
+            height:   '600',
+            source:   'https://docs.google.com/spreadsheet/pub?key=0AnHe-ZevssWtdEFIcV9RNDA0VGNmM1p6YkpjYkcwT0E&output=html',
+            embed_id: 'timeline-embed',
+            font:     'custom',
+            maptype:  'watercolor',
+            css:      'css/timeline.css',
+            js:       'js/timeline-min.js'
+        }
+    </script>
+    <script type="text/javascript" src="js/storyjs-embed.js"></script>
 	</section>
 
+
+	<div class="nav">
+		<span class="nav-label">Esther &amp; Mike get married:</span>
+		<ul class="nav-list">
+			<li><a href="#when">When</a></li>
+			<li><a href="#where">Where</a></li>
+			<li><a href="#registry">Registry</a></li>
+			<li><a href="#timeline">A Tale of Love</a></li>
+		</ul>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-scrollspy.js"></script>
+	<script type="text/javascript" src="js/mike-marries-esther.js"></script>
 
 </body>
 </html>
