@@ -189,6 +189,10 @@ p.address {
 	margin: 0 0 2em 0;
 }
 
+.section-registry-header a:hover {
+	text-decoration: none;
+}
+
 .section-registry-header img {
 	margin: 0 1.75em;
 	transition: opacity 0.5s;
