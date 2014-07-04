@@ -241,3 +241,32 @@ div.nav {
 .nav-list li a {
 	transition: color 0.5s;
 }
+
+
+/* ! Schedule */
+section.schedule {
+	color: #333;
+	text-align: left;
+	padding-left: 1em;
+	padding-top: 0;
+}
+
+section.schedule h2 {
+	margin-top: 2em;
+}
+
+dt {
+	margin: 1em 0 0.5em 0;
+	font-weight: bold;	
+}
+
+dd {
+	margin: 0 0 0 1em;
+}
+
+dd.who {
+	color: #80C497;
+	font-size: 0.9em;
+	font-style: normal;
+	padding-left: 0.15em;
+}
