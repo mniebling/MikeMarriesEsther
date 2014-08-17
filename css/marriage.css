@@ -29,10 +29,8 @@ p {
 .no-transition {
   /* use to temporarily override css transitions */
   transition: none !important;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
 }
+
 
 /* ! Sections (structural) */
 section {
@@ -65,24 +63,19 @@ section p {
   font-size: 2.5em;
   font-weight: 300;
   letter-spacing: -0.04em;
-	padding: 1.7em 0 4em 0;
-	text-align: center;
-	color: #fff;
 }
 
 
-
 /* ! Section colors */
-.section-main        { background-color: #578e37; }
-.section-when        { background-color: #477a7f; }
-.section-when h2     {            color: #2b4e52; }
-.section-where       { background-color: #9e8f3e; }
-.section-where h2    {            color: #5a5217; }
-.section-registry    { background-color: #895d96; }
-.section-registry h2 {            color: #53395e; }
-.section-timeline    { background-color: #bbbbbb; }
-.section-timeline h2 {            color: #777777; }
-
+.section-main          { background-color: #578e37; }
+.section-when          { background-color: #477a7f; }
+.section-when h2       {            color: #2b4e52; }
+.section-where         { background-color: #9e8f3e; }
+.section-where h2      {            color: #5a5217; }
+.section-registry      { background-color: #895d96; }
+.section-registry h2   {            color: #53395e; }
+.section-timeline      { background-color: #bbbbbb; }
+.section-timeline h2   {            color: #777777; }
 
 
 /* ! Individual sections */
@@ -127,12 +120,6 @@ section p {
 
 .memories li:first-child {
   margin-bottom: 0.4em;
-	background-image: url("../img/header-bg.jpg");
-	background-repeat: no-repeat;
-	background-position: 60% bottom;
-
-	/* Image real size is 750px tall for retina */
-	background-size: auto 375px;
 }
 
 /* a wrapper to position offset from center */
@@ -210,79 +197,6 @@ p.address {
 
 .check-out-photos {
   margin: 1.2em 0 0 0;
-	width: 1px;
-	margin: 9em auto 4em auto;
-	overflow: visible;
-}
-
-.section-main-header {
-	width: 14.75em;
-	margin-left: -20em;
-	border-top: 2px solid #6dd900;
-	border-bottom: 1px solid #46b408;
-}
-
-.section-main h1 {
-	font-weight: 300;
-	font-size: 2.5em;
-	letter-spacing: -0.04em;
-	margin: 0;
-}
-
-.section-main-subtitle {
-	color: #70d900;
-	font-size: 0.9em;
-	font-weight: 300;
-	letter-spacing: 0.25em;
-	text-transform: uppercase;
-
-	/* right margin adjusts for the optical illusion */
-	margin: 0 0 0.2em 0.4em;
-}
-
-.section-when-header {
-	width: 10em;
-	padding: 0.1em 0;
-	margin: 0 auto;
-	border-top: 2px solid #60b7c1;
-	border-bottom: 1px solid #57a3ac;
-}
-
-.add-to-calendar {
-	font-size: 0.9em;
-	color: #60b7c1;
-	margin: 2em 0 0 0;
-}
-
-.add-to-calendar a {
-	padding: 0 0 0 0.8em;
-	color: #60b7c1;
-}
-
-iframe {
-	display: inline-block;
-	margin: 0 4em 0 -6em;
-}
-
-.section-where-wrapper {
-	vertical-align: top;
-	text-align: left;
-	display: inline-block;
-}
-
-.section-where-header {
-	padding: 5px 0;
-	border-top: 2px solid #c7b42c;
-	border-bottom: 1px solid #b5a40b;
-}
-
-p.address {
-	font-size: 1.5em;
-	margin: 1.2em 0 0 0;
-}
-
-.check-out-photos {
-	margin: 1.2em 0 0 0;
 }
 
 .section-where a, 
@@ -323,42 +237,6 @@ p.address {
 
 .section-registry-header img:hover {
   opacity: 0.6;
-	font-size: 0.9em;
-	color: #d3bf07;
-}
-
-.check-out-photos a {
-	padding: 0 0 0 0.8em;
-}
-
-.section-registry-header {
-	width: 50em;
-	margin: 0 auto;
-	padding: 15px 20px;
-	border-top: 2px solid #deb0f2;
-	border-bottom: 1px solid #b386c6;
-}
-
-.section-registry p {
-	font-size: 1.5em;
-	letter-spacing: 0;
-	margin: 0 0 2em 0;
-}
-
-.section-registry-header a:hover {
-	text-decoration: none;
-}
-
-.section-registry-header img {
-	margin: 0 1.75em;
-	transition: opacity 0.5s;
-
-	/* Image real size is 82px tall for retina */
-	height: 41px;
-}
-
-.section-registry-header img:hover {
-	opacity: 0.6;
 }
 
 
@@ -379,21 +257,6 @@ div.nav {
 
 .nav-label {
   color: #aaa;
-	background-color: rgba(0, 0, 0, 0.8);
-	font-size: 0.9em;
-	line-height: 0.9em;
-	font-weight: 300;
-	text-align: center;
-
-	position: fixed;
-	z-index: 101;
-	width: 100%;
-	top: 0;
-	padding: 0.7em 0;
-}
-
-.nav-label {
-	color: #aaa;
 }
 
 .nav-list, 
@@ -411,19 +274,6 @@ div.nav {
 
 .nav-list li a {
   transition: color 0.5s;
-	display: inline;
-}
-
-.nav-list li {
-	margin: 0 0.75em;
-}
-
-.nav-list li a {
-	color: #fff;
-}
-
-.nav-list li a {
-	transition: color 0.5s;
 }
 
 
@@ -453,28 +303,4 @@ dd.who {
   font-size: 0.9em;
   font-style: normal;
   padding-left: 0.15em;
-	color: #333;
-	text-align: left;
-	padding-left: 1em;
-	padding-top: 0;
-}
-
-section.schedule h2 {
-	margin-top: 2em;
-}
-
-dt {
-	margin: 1em 0 0.5em 0;
-	font-weight: bold;	
-}
-
-dd {
-	margin: 0 0 0 1em;
-}
-
-dd.who {
-	color: #80C497;
-	font-size: 0.9em;
-	font-style: normal;
-	padding-left: 0.15em;
 }
