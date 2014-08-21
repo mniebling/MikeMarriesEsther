@@ -6,7 +6,7 @@ body {
   margin: 0 0 0 0;  /* 34px 0 0 0 */
 }
 
-ul, 
+ul,
 li {
   list-style-type: none;
   padding: 0;
@@ -88,7 +88,7 @@ section p {
   background-size: auto 375px;
 
   /* Special padding for this one */
-  padding: 1em 0 0.25em 0;
+  padding: 0.5em 0;
 }
 
 .memories {
@@ -125,7 +125,7 @@ section p {
 /* a wrapper to position offset from center */
 .section-main-header-wrap {
   width: 1px;
-  margin: 9em auto 4em auto;
+  margin: 8em auto 4em auto;
   overflow: visible;
 }
 
@@ -199,7 +199,7 @@ p.address {
   margin: 1.2em 0 0 0;
 }
 
-.section-where a, 
+.section-where a,
 .check-out-photos,
 .check-out-photos a {
   color: #d3bf07;
@@ -259,7 +259,7 @@ div.nav {
   color: #aaa;
 }
 
-.nav-list, 
+.nav-list,
 .nav-list li {
   display: inline;
 }
@@ -292,7 +292,7 @@ section.schedule h2 {
 
 dt {
   margin: 1em 0 0.5em 0;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 dd {
